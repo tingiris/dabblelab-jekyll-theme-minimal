@@ -1,0 +1,56 @@
+# site 
+title: Dabble Lab
+baseurl:
+contact_email: hello@dabblelab.com
+#social
+youtube_username: dabblelab
+github_username: dabblelab
+facebook_username: dabblelab
+twitter_username: dabblelab
+
+# defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      title: "Default Page Title"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      type: "sets"
+    values:
+      _hide_content: true    
+
+
+# build
+timezone: Etc/UTC
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-extract-element
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-archives
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  sets:
+
+jekyll-archives:
+  enabled: ['categories']
+
+sass:
+  style: compact # possible values: nested expanded compact compressed

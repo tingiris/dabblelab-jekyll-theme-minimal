@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/screen.css">
+	<link rel="icon" href="/assets/img/icon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="/assets/img/icon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/icon-180x180.png" />
+  <meta name="msapplication-TileImage" content="/assets/img/icon-270x270.png" />
+</head>
+
+<body class="scroll-assist btn-rounded perm-fixed-nav">
+
+	{% include nav.html %}
+
+	<section class="main-container p0">
+			{{ content }}
+
+			{% include footer-slim.html %}
+	</section>
+
+</body>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/flexslider.min.js"></script>
+<script src="/assets/js/parallax.js"></script>
+<script src="/assets/js/scripts.js"></script>
+<script src="/assets/js/masonry.min.js"></script>
+
+</html>

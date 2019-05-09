@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+
+  <div class="container">
+    <div class="row">
+      {% assign posts = page.posts %}
+      <h2>{{ page.title | replace: "-", " " }} <span class="count">({{ posts | size}})</span></h2>
+
+      {% include listings.html listings=posts %}
+
+    </div>
+  </div>

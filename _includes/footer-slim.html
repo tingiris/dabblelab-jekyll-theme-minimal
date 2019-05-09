@@ -1,0 +1,45 @@
+<footer class="footer-2 bg-dark text-center-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="#"><img class="image-xxs fade-half" alt="Pic" src="/assets/img/logo-light.png"></a>
+      </div>
+
+      <div class="col-sm-4 text-center">
+        <span class="fade-half">
+          © Copyright {{ site.time | date: "%Y" }} {{site.title}} - All Rights Reserved
+        </span>
+      </div>
+
+      <div class="col-sm-4 text-right text-center-xs">
+        <ul class="list-inline social-list">
+            {% if site.youtube_username %}
+            <li>
+              <a href="http://youtube.com/{{ site.youtube_username }}" target="_self">
+                <i class="icon fa fa-youtube-square icon-sm"></i>
+              </a>
+            </li>
+            {% endif %} {% if site.github_username %}
+            <li>
+              <a href="https://github.com/{{ site.github_username }}" target="_self">
+                <i class="icon fa fa-github-square icon-sm"></i>
+              </a>
+            </li>
+            {% endif %} {% if site.twitter_username %}
+            <li>
+              <a href="https://twitter.com/{{ site.twitter_username }}" target="_self">
+                <i class="icon fa fa-twitter-square icon-sm"></i>
+              </a>
+            </li>
+            {% endif %} {% if site.facebook_username %}
+            <li>
+              <a href="http://facebook.com/{{ site.facebook_username }}" target="_self">
+                <i class="icon fa fa-facebook-square icon-sm"></i>
+              </a>
+            </li>
+            {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

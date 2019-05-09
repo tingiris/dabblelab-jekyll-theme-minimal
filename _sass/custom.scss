@@ -1,0 +1,91 @@
+.nav-bar {
+  height: 55px;
+  max-height: 55px;
+  line-height: 53px;
+  border-bottom: 0px solid #ccc;
+}
+.module.widget-handle {
+  border-left: none;
+  border-top: 0px solid #ccc;
+  line-height: 40px;
+  min-height: 40px;
+}
+.mobile-toggle {
+  border-left: 0px solid #ccc !important;
+  border-bottom: none !important;
+}
+
+.team-member-box {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.team-member-box .nopadding {
+    padding: 0 !important;
+}
+.team-member-box .nomargin{
+  margin: 0;
+}
+
+.team-member-box .item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.item .content {
+    padding: 25px 15px;
+    height: 277px;
+}
+.item h2 {
+    color: #404040;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 22px;
+}
+.team-member-box .item img {
+    width: 100%;
+    height: auto;
+}
+.img-overflow {
+    background: #f6511d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.item:hover .img-overflow {
+    opacity: .6;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.item .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #fff;
+    position: absolute;
+    top: 115px;
+    right: 0;
+}
+.item .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #fff;
+    position: absolute;
+    top: 115px;
+    left: 0;
+}
+.item p {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 10px 0;
+}

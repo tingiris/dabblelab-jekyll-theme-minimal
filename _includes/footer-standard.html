@@ -1,0 +1,41 @@
+<footer class="footer-2 bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center mb64 mb-xs-24">
+        <a href="#">
+          <div class="vnu"><img alt="Logo" class="image-xs mb16" src="/img/logo-light.png"></div>
+        </a>
+        <p class="lead mb48 mb-xs-16">
+          1311 N Westshore Blvd • Suite 101<br> Tampa, Florida 33607<br> (813) 575-0530</p>
+        <ul class="list-inline social-list spread-children">
+          {% if site.youtube_username %}
+          <li><a href="http://youtube.com/{{ site.youtube_username }}" target="_self"><i class="icon fa fa-youtube-square icon-sm"></i></a></li>
+          {% endif %}
+          {% if site.github_username %}
+          <li><a href="https://github.com/{{ site.github_username }}" target="_self"><i class="icon fa fa-github-square icon-sm"></i></a></li>
+          {% endif %}
+          {% if site.twitter_username %}
+          <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_self"><i class="icon fa fa-twitter-square icon-sm"></i></a></li>
+          {% endif %}
+          {% if site.facebook_username %}
+          <li><a href="http://facebook.com/{{ site.facebook_username }}" target="_self"><i class="icon fa fa-facebook-square icon-sm"></i></a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="row fade-half">
+      <div class="col-sm-4 text-center-xs">
+        <span>© Copyright 2017 Dabble Lab</span>
+      </div>
+
+      <div class="col-sm-4 text-center hidden-xs">
+        <span>Full-time, Part-time &amp; On-demand Product Development&nbsp;</span>
+      </div>
+
+      <div class="col-sm-4 text-right hidden-xs">
+        <span>hello@dabblelab.com</span>
+      </div>
+    </div>
+  </div>
+</footer>

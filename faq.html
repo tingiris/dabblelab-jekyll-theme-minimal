@@ -1,0 +1,32 @@
+---
+title: Frequently Asked Questions
+faq:
+  - question : What are skill templates?
+    answer : Skill templates are prebuilt code templates for creating skills for Amazon Alexa.
+  - question : How do I use skill templates?
+    answer : For details on using skill templates please see our <a href='/getting-started'>Getting Started Guides</a>.
+  - question : Do you have templates for Google Assistant or other digital assistants?
+    answer : Stay tuned  templates for Google Assistant Twilio Autopilot and Microsoft Cortana are coming soon.
+  - question : Can I contribute templates?
+    answer : Absolutely! Just send an email to skilltemplates@dabblelab.com with a link to a public git repository containing the code you'd like to share as a template. We'll followup with you from there.
+  - question : How do I get support for a template?
+    answer : Currently skilltemplates.com is a 'dabble' and we don't make any money from it. We're happy to help as much as we can but we have day jobs and can't guarantee we'll always be available for support. So for now support is limited to comments on our <a href='https://www.youtube.com/dabblelab'>YouTube channel</a> which we normally respond to within 24-hours.
+  - question : Who created this site and why?
+    answer : This site was created by the team at <a href='https://www.youtube.com/dabblelab'>Dabble Lab</a>. We build custom skills for clients and we created this site share code.
+---
+
+
+<h1>FAQ</h1>
+
+<section class="faq">
+	<ul>
+		{% for item in page.faq %}
+			<li><a href="#{{ item.question | slugify }}">{{ item.question }}</a></li>
+		{% endfor %}
+	</ul>
+
+	{% for item in page.faq %}
+		<h2 id="{{ item.question | slugify}}">{{ item.question }}<a class="header-link" href="#{{ item.question | slugify }}">#</a></h2>
+		{{ item.answer | markdownify }}
+	{% endfor %}
+</section>
